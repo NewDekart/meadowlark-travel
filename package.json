@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node app.js",
+    "test": "jest",
+    "lint": "eslint app.js lib"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,15 @@
   },
   "homepage": "https://github.com/NewDekart/meadowlark-travel#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2"
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "jest": "^27.4.7",
+    "portfinder": "^1.0.28",
+    "puppeteer": "^13.0.1"
   }
 }
